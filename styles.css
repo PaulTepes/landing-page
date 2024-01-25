@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+}
+
+#header-logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  align-items: center;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+a:hover {
+  color: #95a5a6;
+}
+
+.hero-section {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin: 0;
+  gap: 0px 12px;
+}
+/* @media only screen and (max-width: 480px) {
+  .hero-section {
+    gap: 0;
+    margin: 0px;
+    padding: 0;
+  }
+  #frame img {
+    margin-top: 45px;
+  }
+} */
+
+.hero-section .left {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.hero-section .left h1 {
+  font-size: 48px;
+  color: #f9faf8;
+  margin: 0;
+}
+
+.hero-section .left p,
+a {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin: 0;
+}
+
+.hero-section .left button {
+  width: 100px;
+  height: 40px;
+  flex-shrink: 0;
+  color: #e5e7eb;
+  background-color: #3882f6;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .left button:hover {
+  background-color: #2c67b8;
+}
+.hero-section.left {
+  display: flex;
+}
+
+#frame > img {
+  max-width: 100%;
+  height: auto;
+}
+/* #frame {
+  color: #e5e7eb;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #fffcfc;
+  display: flex;
+  height: 250px;
+  width: 400px;
+} */
+
+main section {
+  display: flex;
+}
+
+section#images {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+}
+
+section .cards {
+  display: flex;
+}
+
+section.cards.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#quotes {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #e5e7eb;
+}
+
+section blockquote p {
+  display: flex;
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 300;
+  font-style: italic;
+}
+
+section#quotes footer {
+  display: flex;
+}
+.main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e5e7eb;
+}
+
+.main-footer,
+.header {
+  background-color: #1f2937;
+}
