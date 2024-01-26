@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -16,7 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
 }
 
 nav {
@@ -49,20 +49,9 @@ a:hover {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  padding: 30px;
   margin: 0;
   gap: 0px 12px;
 }
-/* @media only screen and (max-width: 480px) {
-  .hero-section {
-    gap: 0;
-    margin: 0px;
-    padding: 0;
-  }
-  #frame img {
-    margin-top: 45px;
-  }
-} */
 
 .hero-section .left {
   width: 400px;
@@ -86,7 +75,6 @@ a {
 .hero-section .left button {
   width: 100px;
   height: 40px;
-  flex-shrink: 0;
   color: #e5e7eb;
   background-color: #3882f6;
   padding: 10px 20px;
@@ -104,64 +92,123 @@ a {
   display: flex;
 }
 
-#frame > img {
+#frame {
+  display: flex;
+}
+
+#frame img {
   max-width: 100%;
   height: auto;
+  /* width: 100%; */
 }
-/* #frame {
-  color: #e5e7eb;
+
+section.cards {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+#title-cards {
+  margin-bottom: 32px;
+  text-align: center;
+}
+.card-container {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  /* flex-shrink: 0; */
+}
+.card img {
+  /* border: 2px solid #3882f6;
+  border-radius: 15px; */
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.text {
+  max-width: 200px;
+}
+
+#quotes {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  border: 2px solid #fffcfc;
-  display: flex;
-  height: 250px;
-  width: 400px;
-} */
-
-main section {
-  display: flex;
-}
-
-section#images {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  text-align: center;
-}
-
-section .cards {
-  display: flex;
-}
-
-section.cards.card {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-section#quotes {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
   background-color: #e5e7eb;
 }
 
-section blockquote p {
+section blockquote {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 823px;
+  padding: 20px;
+}
+section blockquote p {
+  text-align: left;
   font-size: 36px;
   color: #1f2937;
   font-weight: 300;
   font-style: italic;
+  max-width: 823px;
+  margin-bottom: 0;
 }
 
-section#quotes footer {
-  display: flex;
+#quotes-footer {
 }
+
+.call-to-action {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.call-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 16px;
+  background: #3882f6;
+  padding: 16px;
+  border-radius: 10px;
+  flex: 1;
+  max-width: 800px;
+  color: #e5e7eb;
+}
+
+#call-button {
+  width: 100px;
+  height: 40px;
+  color: #e5e7eb;
+  background-color: #3882f6;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 2px solid #e5e7eb;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+#call-button:hover {
+  cursor: pointer;
+  background-color: #2c67b8;
+}
+
 .main-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #e5e7eb;
+  padding: 20px;
 }
 
 .main-footer,

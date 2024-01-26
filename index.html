@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page</title>
+    <title>Norse Mythology Hub</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -19,43 +19,44 @@
         </nav>
         <section class="hero-section">
           <div class="left">
-            <h1>This website is awesome</h1>
+            <h1>Welcome to the Realm of Odin</h1>
             <p>
-              This website has some subtext that goes here under the main title.
-              It's a smaller font and color is lower contrast
+              Immerse yourself in the rich tapestry of Norse mythology. From the
+              mighty Thor to the cunning Loki, discover the captivating stories
+              of gods, giants, and heroes.
             </p>
             <button>Sign up</button>
           </div>
-          <div id="frame" style="display: flex">
+          <div id="frame">
             <!-- Your image -->
             <img
-              style="height: 235px; width: 400; padding: 0; margin-bottom: 0"
-              src="https://picsum.photos/400/235"
-              alt="This is a placeholder for an image"
+              style="height: 250px; width: 400; padding: 0; margin-bottom: 0"
+              src="https://source.unsplash.com/400x235/?dark-fantasy"
+              alt="Dark Fantasy Image"
             />
           </div>
         </section>
       </header>
 
       <main>
-        <section id="images">
-          <h1>Some random information</h1>
-          <div class="cards">
+        <section class="cards">
+          <h1 id="title-cards">Some random information</h1>
+          <div class="card-container">
             <div class="card">
-              <img src="./images/barberry.png" alt="barberry" />
+              <img src="./assets/images/barberry.png" alt="barberry" />
               <p class="text">This is a type of plant. We love this one.</p>
             </div>
             <div class="card">
-              <img src="./images/barberry.png" alt="barberry" />
-              <p class="text">This is a type of plant. We love this one.</p>
+              <img src="./assets/images/chilli.png" alt="chili" />
+              <p class="text">This is another type of plant. Isn't it nice?</p>
             </div>
             <div class="card">
-              <img src="./images/barberry.png" alt="barberry" />
-              <p class="text">This is a type of plant. We love this one.</p>
+              <img src="./assets/images/pepper.png" alt="pepper" />
+              <p class="text">We have so many plants. Yay plants.</p>
             </div>
             <div class="card">
-              <img src="./images/barberry.png" alt="barberry" />
-              <p class="text">This is a type of plant. We love this one.</p>
+              <img src="./assets/images/saffron.png" alt="saffron" />
+              <p class="text">I'm running out of things to say about plants.</p>
             </div>
           </div>
         </section>
@@ -63,20 +64,23 @@
         <section id="quotes">
           <blockquote>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-              dolorem?
+              This is an inspiring quote, or a restimonial from a customer.
+              Maybe it's just filling up space, or maybe people will actually
+              read it. Who knows? All i know is that it looks nice.
             </p>
-            <footer>-Thor, God of Lorem</footer>
+            <footer id="quotes-footer">-Thor, God of Lorem</footer>
           </blockquote>
         </section>
-        <section class="Call to action">
-          <div>
+
+        <section class="call-to-action">
+          <div class="call-container">
             <div class="left">
-              <p>Call to action!</p>
+              <p style="font-weight: bold">Call to action!</p>
               <p>Sign up blabalbalbalblablalbalba</p>
             </div>
-            <div class="right">
-              <button>Sign up</button>
+
+            <div>
+              <button id="call-button">Sign up</button>
             </div>
           </div>
         </section>
